@@ -1,0 +1,131 @@
+:root {
+  --primary-color: #b6fbfe;
+  --secondary-color: #900048;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --gradient: linear-gradient(
+    68.6deg,
+    rgb(252, 165, 241) 1.8%,
+    rgb(181, 255, 255) 100.5%
+  );
+}
+
+body {
+  margin-top: 100px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 60px auto;
+  max-width: 100%;
+  background: var(--gradient);
+}
+
+.navbar-brand {
+  color: #702283;
+}
+.nav-link {
+  color: #702283;
+}
+
+h1,
+h2,
+h3 {
+  color: #702283;
+  text-align: center;
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 24px;
+  opacity: 0.7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: var(--secondary-color);
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+  background: #f7abf2;
+  box-shadow: var(--box-shadow);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--secondary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  body {
+    margin: 100px 0;
+    display: block;
+    background: #d0e0fa;
+  }
+  .text-center {
+    text-align: center !important;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+}
